@@ -11,8 +11,26 @@ header{
 }
 
 .container{
-    max-width: 1070px;
+    max-width: 1070px; 
     margin: 0 auto;
+}
+
+@media (max-width:1070px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px){
+    .container{
+        max-width: none;
+    }
 }
 
 .header_flex{
@@ -22,12 +40,11 @@ header{
 }
 
 .header_flex div a img{
-    width: 150px;
+    max-width: 150px; 
 }
 
 h1{
     font-size: 50px;
-    font-family: cursive;
 }
 
 .about{
@@ -68,7 +85,7 @@ h1{
     font-size: 30px;
     letter-spacing: -2.50105px;
     color: #19191B;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .about_diagnostic_li{
@@ -77,6 +94,16 @@ h1{
     color: #696871;
     font-family: 'Mulish';
     font-weight: 400;
+}
+
+.reviews_title{
+    text-align: center;
+    font-size: 50px;
+}
+
+.reviews{
+    max-width: 250px;
+    max-height: 350px;
 }
 
 footer{
@@ -91,7 +118,7 @@ footer{
 }
 
 .logo_foot{
-    width: 130px;
+    max-width: 130px;
     margin-left: 70px;
 }
 
@@ -104,5 +131,5 @@ footer{
 }
 
 .soc_media{
-    width: 40px;
+    max-width: 40px;
 }
