@@ -1,3 +1,4 @@
+/* Скидання налаштувань за замовчуванням */
 *{
     padding: 0;
     margin: 0;
@@ -5,131 +6,101 @@
     font-weight: normal;
 }
 
-header{
-    background: rgba(255, 113, 67, 0.27);
-    padding: 10px;
-}
-
+/* Ширину контейнера з контентом сайту */
 .container{
     max-width: 1070px; 
     margin: 0 auto;
 }
-
-@media (max-width:1070px){
-    .container{
-        max-width: 970px;
-    }
-}
-
-@media (max-width:992px){
-    .container{
-        max-width: 750px;
-    }
-}
-
-@media (max-width:767px){
-    .container{
-        max-width: none;
-    }
-}
-
-.header_flex{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.header_flex div a img{
-    max-width: 150px; 
-}
-
-h1{
-    font-size: 50px;
-}
-
+/* Зовнішні відступи від контейнерів з контентом (окрім хедера і футера) */
 .about{
+    margin: 104px auto 85px;
+}
+/* Розташування контейнерів на сторінці */
+.about, .header_flex, .footer_flex{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 104px auto 85px;
 }
-
+/* ------------------------------------------------------ */
+/* Налаштування фону хедера */
+header{
+    background: rgba(255, 113, 67, 0.27);
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1.5px;
+}
+/* Налаштування лого хедера */
+.logo_header{
+    max-width: 150px; 
+}
+/* Налаштування заголовка хедера */
+h1{
+    font-size: 50px;
+}
+/* Налаштування заголовку першого контейнера */
 .about_title{
     max-width: 467px;
-    font-family: 'DM Sans';
     font-weight: 700;
     font-size: 30px;
     letter-spacing: -2.50105px;
     color: #19191B;
     margin-bottom: 30px;
 }
-
+/* Налаштування текста першого контейнера */
 .about_txt{
     max-width: 410px;
-    font-family: 'Mulish';
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.625263px;
-    color: #696871;
-    margin-bottom: 50px;
 }
-
+/* Загальні налаштування другого контейнера */
 .diagnostic{
     max-width: 500px;
 }
-
-.about_diagnostic_txt{
-    font-family: 'DM Sans';
+/* Налаштування заголовку другого контейнера */
+.about_diagnostic_title{
     font-weight: 700;
     font-size: 30px;
     letter-spacing: -2.50105px;
     color: #19191B;
     margin-bottom: 25px;
 }
-
+/* Налаштування списка другого контейнера */
 .about_diagnostic_li{
     font-size: 20px;
     letter-spacing: -0.625263px;
-    color: #696871;
-    font-family: 'Mulish';
     font-weight: 400;
+    margin-left: 25px;
 }
-
+/* Налаштування тексту ""Відгуки */
 .reviews_title{
     text-align: center;
     font-size: 50px;
 }
-
+/* Налаштування блоків з відгуками */
 .reviews{
     max-width: 250px;
     max-height: 350px;
+    font-size: 27px;
+    padding: 30px;
 }
-
+/* Налаштування фону футера */
 footer{
     background: rgba(255, 113, 67, 0.27);
     padding: 10px;
+    box-shadow: 1px 1px 10px 1.5px;
 }
-
-.footer_flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo_foot{
+/* Налаштування лого футера */
+.logo_footer{
     max-width: 130px;
     margin-left: 70px;
 }
-
+/* Налаштування посилань на соц.мережі */
 .nav_li{
     display: inline-block;
+    margin-left: 59px;
 }
-
-.nav_li:not(:first-of-type){
-    margin-left: 49px;
-}
-
-.soc_media{
+/* Налаштування логотипів посилань на соц.мережі */
+.soc_media_logo{
     max-width: 40px;
 }
