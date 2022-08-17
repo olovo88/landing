@@ -108,8 +108,9 @@ h1{
     max-height: 350px;
     font-size: 1.6875em;
     padding: 30px;
-    background: white;
+    background: #FE7D50;
     border-radius: 10px;
+    color: #ffffff;
 }
 /* Налаштування фону футера */
 footer{
@@ -166,9 +167,13 @@ footer{
     .about_back{
         background: #FE7D50;
         padding: 30px;
-        border-radius: 30px;
+        border-radius:  0px;
     } 
     
+    .firstmen{
+        margin: 20px 20px 0px 20px;
+    }
+
     header{
         background: #A5EAEB;
         padding: 10px;
@@ -180,7 +185,7 @@ footer{
     }
     /* Налаштування лого хедера */
     .logo_header{
-        max-width: 50px; 
+        max-width: 80px; 
         padding-left: 1em;
     }
     /* Налаштування заголовка хедера */
@@ -229,26 +234,30 @@ footer{
     /*  */
     .title_back{
         max-width: 300px;
-        background: #FE7D50;
+        background: #ffffff00;
+        border-radius: 0px;
         padding: 10px;
-        border-radius: 30px;
         text-align: center;
         margin: 0 auto;
     }
     /* Налаштування тексту ""Відгуки */
     .reviews_title{
+        background: #FE7D50;
         font-size: 1.05em;
         color: #ffffff;
         font-size: 2.05em;
+        border-radius: 2.05em;
     }
     /* Налаштування блоків з відгуками */
     .reviews{
-        max-width: 250px;
+        max-width: 100%;
         max-height: 350px;
         font-size: 1.3875em;
         padding: 30px;
-        background: white;
-        border-radius: 10px;
+        background: #FE7D50;
+        color: #ffffff;
+        margin: 0 auto;
+        border-radius: 0px;
     }
     /* Налаштування фону футера */
     footer{
@@ -258,7 +267,7 @@ footer{
     }
     /* Налаштування лого футера */
     .logo_footer{
-        max-width: 50px;
+        max-width: 80px;
         margin-left: 20px;
     }
     /* Налаштування посилань на соц.мережі */
