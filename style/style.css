@@ -253,14 +253,14 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування лого хедера */
     .logo_header{
-        max-width: 100px; 
-        padding-left: 1em;
+        max-width: 45%; 
+        margin: 0 auto;
     }
 
     /* Налаштування заголовка хедера */
     h1{
         font-size: 1.325em;
-        padding-right: 1em;
+        margin: 0 auto;
     }
 
     /* Налаштування заголовку першого контейнера */
@@ -312,8 +312,8 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування лого футера */
     .logo_footer{
-        max-width: 80px;
-        margin-left: 10px;
+        max-width: 4em;
+        margin-left: 0.3em;
     }
     
     .nav_li{
