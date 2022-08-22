@@ -26,9 +26,9 @@
 }
 
 /* Налаштування зображень контейнерів (для адаптива) */
-.firstmen{
-    max-width: 100%;
-    max-height: 100%;
+.firstmen1, .firstmen2{
+    display: block;
+    margin: 0 auto;
 }
 
 /* Налаштування фону блоків з контентом */
@@ -78,12 +78,12 @@ h1{
 }
 
 /* Загальні налаштування другого контейнера */
-.diagnostic{
+.block2{
     max-width: 500px;
 }
 
 /* Налаштування заголовку другого контейнера */
-.about_diagnostic_title{
+.diagnostic_title{
     font-weight: 700;
     font-size: 1.875em;
     letter-spacing: -2.50105px;
@@ -92,7 +92,7 @@ h1{
 }
 
 /* Налаштування списка другого контейнера */
-.about_diagnostic_li{
+.diagnostic_li{
     font-size: 1.25em;
     letter-spacing: -0.625263px;
     font-weight: 400;
@@ -231,6 +231,10 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
  
  @media (max-width: 480px){
     
+    .container{
+        max-width: 90%;
+    }
+
     .about{
         display: inline;
     }
@@ -239,13 +243,11 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     .about_back{
         border-radius:  0px;
     } 
-
-    .div_img{
-        padding: 20px;
-    }
     
     /* налаштування картинок блоків з контентом */
-    .firstmen{
+    .firstmen1, .firstmen2{
+        display: block;
+        margin: 0 auto;
         max-width: 100%;
     }
 
@@ -253,13 +255,13 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування лого хедера */
     .logo_header{
-        max-width: 45%; 
+        max-width: 65px; 
         margin: 0 auto;
     }
 
     /* Налаштування заголовка хедера */
     h1{
-        font-size: 1.325em;
+        font-size: 1.4em;
         margin: 0 auto;
     }
 
@@ -279,14 +281,15 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     }
 
     /* Налаштування заголовку другого контейнера */
-    .about_diagnostic_title{
+    .diagnostic_title{
         font-size: 1.675em;
         max-width: 95%;
     }
 
     /* Налаштування списка другого контейнера */
-    .about_diagnostic_li{
+    .diagnostic_li{
         font-size: 1.15em;
+        color: #ffffff;
     }
 
     /* Фон блоку заголовка ""Відгуки */
@@ -317,12 +320,12 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     }
     
     .nav_li{
-        margin: 0 10px;
+        margin: 0 15px;
     }
 
     /* Налаштування логотипів посилань на соц.мережі */
     .soc_media_logo{
-        max-width: 21px;
+        max-width: 27px;
     }
 }
 
@@ -403,8 +406,12 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
  /* мобільні телефони (альбомна орієнтація) */
 
- @media (min-width: 481px) and (max-width: 600px){
+ @media (min-width: 480px) and (max-width: 600px){
     
+    .container{
+        max-width: 95%;
+    }
+
     .about{
         display: inline;
     }
@@ -415,8 +422,10 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     }
 
     /* налаштування картинок блоків з контентом */
-    .firstmen{
-        margin: 5% 25%;
+    .firstmen1, .firstmen2{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     /* ------------------------------------------------------ */
@@ -429,7 +438,7 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування заголовка хедера */
     h1{
-        font-size: 1.325em;
+        font-size: 1.425em;
         padding-right: 1em;
     }
 
@@ -449,14 +458,16 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     }
 
     /* Налаштування заголовку другого контейнера */
-    .about_diagnostic_title{
+    .diagnostic_title{
         font-size: 1.675em;
         max-width: 95%;
+        
     }
 
     /* Налаштування списка другого контейнера */
-    .about_diagnostic_li{
+    .diagnostic_li{
         font-size: 1.15em;
+        color: #ffffff;
     }
 
     /* Фон блоку заголовка ""Відгуки */
@@ -483,12 +494,12 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     /* Налаштування лого футера */
     .logo_footer{
         max-width: 80px;
-        margin-left: 20px;
+        margin-left: 23px;
     }
 
     /* Налаштування логотипів посилань на соц.мережі */
     .soc_media_logo{
-        max-width: 21px;
+        max-width: 26px;
     }
 }
 
@@ -571,6 +582,7 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
  
  @media (min-width: 601px) and (max-width: 768px){
     
+    /* Налаштування контейнера з контентом */
     .about{
         display: inline;
     }
@@ -580,9 +592,11 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
         border-radius:  0px;
     } 
 
+    
     /* налаштування картинок блоків з контентом */
     .firstmen{
-        margin: 5% 25%;
+        display: block;
+        margin: 0 auto;
     }
 
     /* ------------------------------------------------------ */
@@ -595,7 +609,7 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування заголовка хедера */
     h1{
-        font-size: 1.325em;
+        font-size: 1.525em;
         padding-right: 1em;
     }
 
@@ -609,19 +623,20 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
         max-width: 85%;
         font-size: 1.05em;
     }
-    .diagnostic{
+    .block2{
         max-width: 100%;
     }
 
     /* Налаштування заголовку другого контейнера */
-    .about_diagnostic_title{
+    .diagnostic_title{
         font-size: 1.675em;
         max-width: 95%;
     }
 
     /* Налаштування списка другого контейнера */
-    .about_diagnostic_li{
-        font-size: 1.15em;
+    .diagnostic_li{
+        font-size: 1.25em;
+        color: #ffffff;
     }
 
     /* Фон блоку заголовка ""Відгуки */
@@ -653,7 +668,7 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування логотипів посилань на соц.мережі */
     .soc_media_logo{
-        max-width: 21px;
+        max-width: 27px;
     }
 }
 
@@ -736,6 +751,11 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
  
  @media (min-width: 769px) and (max-width: 1024px){
     
+    /* Налаштування контейнера з контентом */
+    .container{
+        max-width: 87%;
+    }
+    /* Налаштування блоків з контентом */
     .about{
         display: inline;
     }
@@ -747,7 +767,8 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* налаштування картинок блоків з контентом */
     .firstmen{
-        margin: 5% 25%;
+        display: block;
+        margin: 0 auto;
     }
 
     /* ------------------------------------------------------ */
@@ -760,8 +781,13 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування заголовка хедера */
     h1{
-        font-size: 1.325em;
+        font-size: 1.725em;
         padding-right: 1em;
+    }
+    /* Налаштування першого блоку (загальне) */
+    .block1{
+        padding-left: 5em;
+        padding-right: 5em;
     }
 
     /* Налаштування заголовку першого контейнера */
@@ -774,20 +800,22 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
         max-width: 85%;
         font-size: 1.05em;
     }
-
-    .diagnostic{
-        max-width: 100%;
+    /* Налаштування другого блоку (діагностичне заннятя) */
+    .block2{
+        padding-left: 3em;
+        padding-right: 6em;
     }
 
     /* Налаштування заголовку другого контейнера */
-    .about_diagnostic_title{
+    .diagnostic_title{
         font-size: 1.675em;
         max-width: 95%;
     }
 
     /* Налаштування списка другого контейнера */
-    .about_diagnostic_li{
+    .diagnostic_li{
         font-size: 1.15em;
+        color: #ffffff;
     }
 
     /* Фон блоку заголовка ""Відгуки */
@@ -807,8 +835,10 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
     .reviews{
         max-width: 100%;
         font-size: 1.3875em;
-        margin: 0 auto;
+        
         border-radius: 0px;
+        padding-left: 2em;
+        padding-right: 5em;
     }
 
     /* Налаштування лого футера */
@@ -819,7 +849,7 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування логотипів посилань на соц.мережі */
     .soc_media_logo{
-        max-width: 21px;
+        max-width: 31px;
     }
 }
 
@@ -902,20 +932,19 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
  @media (min-width: 1025px) and (max-width: 1280px){
     
-    .about{
-        display: inline;
+    /* Налаштування контейнера з контентом */
+    .container{
+        max-width: 87%;
     }
-
-    /* Налаштування фону хедера */
-    .about_back{
-        border-radius:  0px;
-    } 
 
     /* налаштування картинок блоків з контентом */
-    .firstmen{
-        margin: 5% 25%;
+    .firstmen1, .firstmen2{
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 400px;
+        
     }
-
+    
     /* ------------------------------------------------------ */
 
     /* Налаштування лого хедера */
@@ -926,8 +955,15 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
 
     /* Налаштування заголовка хедера */
     h1{
-        font-size: 1.325em;
+        font-size: 2.325em;
         padding-right: 1em;
+    }
+
+    /* Налаштування першого блоку (загальна інформація) */
+    .block1{
+        max-width: 500px;
+        margin: 15px;
+        padding: 20px;
     }
 
     /* Налаштування заголовку першого контейнера */
@@ -941,25 +977,30 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
         font-size: 1.05em;
     }
 
-    .diagnostic{
-        max-width: 100%;
+    /* Налаштування другого блоку (діагностичне заннятя) */
+    .block2{
+        display: block;
+        border-radius: 30px;
+        max-width: 600px;
+        margin: 30px;
     }
 
     /* Налаштування заголовку другого контейнера */
-    .about_diagnostic_title{
+    .diagnostic_title{
         font-size: 1.675em;
         max-width: 95%;
     }
 
     /* Налаштування списка другого контейнера */
-    .about_diagnostic_li{
+    .diagnostic_li{
         font-size: 1.15em;
+        color: #ffffff;
     }
 
     /* Фон блоку заголовка ""Відгуки */
     .title_back{
-        max-width: 100%;
-        border-radius: 0px;
+        max-width: 15em;
+        border-radius: 30px;
         background: #A5EAEB;
     }
 
@@ -974,17 +1015,18 @@ _________________¶111111¶¶_____________¶¶¶¶¶¶_____
         max-width: 100%;
         font-size: 1.3875em;
         margin: 0 auto;
-        border-radius: 0px;
+        margin-left: 1em;
+        border-radius: 30px;
     }
 
     /* Налаштування лого футера */
     .logo_footer{
-        max-width: 80px;
+        max-width: 95px;
         margin-left: 20px;
     }
     
     /* Налаштування логотипів посилань на соц.мережі */
     .soc_media_logo{
-        max-width: 21px;
+        max-width: 31px;
     }
 }
